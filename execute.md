@@ -1,5 +1,5 @@
-# Novo execute da 1.14+
-Esse comandos valem para a versão a partir da 1.13 do minecraft, exceto [data](#if###data).
+# Novo execute da 1.14
+Esse comandos valem para a versão a partir da 1.13 do minecraft, exceto [data](#data), que foi adicionada na 1.14
 
 ## Tabela de comandos
 * [Execute](#execute)
