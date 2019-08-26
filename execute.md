@@ -21,49 +21,44 @@ Esse comandos valem para a versão 1.13 do minecraft, exceto alguns itens.
 ---
 
 ## Execute
-O comando `execute` faz executar outros comandos em seguida, sendo que pode haver várias condições e instruções:
+O comando `execute` faz executar outros comandos em seguida, podendo ter várias condições e instruções;
 ```
 execute as @a at @s if block ~ ~-1 ~ minecraft:dirt run particle minecraft:happy_villager
 ```
+### O que mudou:
+A diferença é que há a possibilidade de adicionar várias condições e instruções em sequência.
 #### 1.12
-`execute @a ~ ~ ~` `...`
+`execute @a ~ ~ ~ ...`
 #### 1.13
-`execute` `as @a` `at @s` `if block` `run` `...`.
-*A diferença do execute das versões inferiores à 1.13 é que há a possibilidade de adicionar várias condições seguidas*
+`execute as @a at @s run ...`
 
 ## Align
-Instrução para alinha o comando em relação a posição `x`,`y`e`z`.
-Pode ser usado `align`, `x`/`y`/`z`, `xy`/`zy`,`zx` ou `xyz` (Não precisa ser na ordem "xyz" corretamente, por exemplo: pode ser "zx" ou "yzx").
-```
-execute as @a at @s align xyz positioned ~0.5 ~0.5 ~0.5 run particle minecraft:happy_villager
-```
+Instrução para alinha o comando em relação a coordenada `x`,`y`e`z`.
+O `align` pode ser usado como: `(x|xy|zx|xzy|...)` (Não precisa ser na ordem "xyz").
 ```
 execute as @a at @s align xz positioned ~0.5 ~ ~0.5 run summon minecraft:armor_stand
 ```
 
 ## Anchored
-Instrução para alinha com o olho ou pé (o comando, por padrão já é alinhado ao pé das entidade) a entidade.
-Sempre use "^ ^ ^" (relação à visão) para funcionar.
+Instrução para ancorar com os olhos ou pés (por padrão já é alinhado ao pé das entidade) a entidade. **Sempre use comando com "^ ^ ^" (relação à visão).**
 ```
 execute as @a at @s anchored eyes run particle minecraft:happy_villager ^ ^ ^3 0 0 0 0 1
 ```
 
 ## As
-Instrução para ser executado como a entidade, isso não significa necessariamente que vai ser executado no lugar da entidade.
-__Antigamente usado como `execute "@a" ~ ~ ~`__
+Instrução para ser executado "como" a entidade, isso não significa que vai ser executado no lugar da entidade.
 ```
 execute as @a run say olá
 ```
 
 ## At
-Instrução para indicar onde vai ser executado, isso não significa necessariamente que vai ser executado como a entidade.
-__Antigamente usado como `execute @a "~ ~ ~"`__
+Instrução para indicar onde vai ser executado, isso não significa que vai ser executado "como" a entidade.
 ```
 execute at @a run setblock ~ ~ ~ minecraft:stone
 ```
 
 ## Facing
-Instrução para ser executar como a rotação "olhando" para `entity`(entidade) ou `~ ~ ~`(bloco),
+Instrução para ser executar como a visão rotacionada para `entity`(entidade) ou `~ ~ ~`(bloco),
 #### `entity`
 olhando para entidade (olho ou pés);
 ... (`eyes`/`feet`)
@@ -81,36 +76,34 @@ execute facing 10 60 -10 run particle minecraft:happy_villager ^ ^ ^1 0 0 0 0 1
 ```
 
 ## If/unless
-Condições "se" e "se não".
-Foram criados para substituir o `testfor`.
-As condições que são comparadas: `(block|blocks|data|entity|score)`.
+Condições "se" e "se não": `(block|blocks|data|entity|score)`.
 #### `block`
-se/se_não bloco da posição for;
+detecta se bloco está na posição;
 ... `<posição>` `<bloco>`
 ```
 execute as @a at @s if block ~ ~-1 ~ minecraft:stone run gamemode survival @s
 ```
 #### `blocks`
-comparar blocos;
+compara blocos;
 ...`<início>` `<fim>` `<destinado>` `(all|masked)`
 ```
 execute if blocks 0 20 4 0 21 4 0 20 6 masked run effect give @a minecraft:speed
 ```
 #### `data`
-compara se o `nbt` da data;
+compara `nbt` da entdade ou bloco;
 ...`block` `<posição>` `<trajetoNBT>`
 ...`entiy` `<alvo>` `<trajeto>`
 ```
 execute as @a if data entity @s SelectedItem.tag.Enchantments run playsound minecraft:block.enchantment_table.use master @a
 ```
 #### `entiy`
-detecta se tem a entidade;
+detecta se há a entidade;
 ... `<alvo>`
 ```
 execute if entity @e[type=minecraft:creeper] run kill @e[type=minecraft:creeper]
 ```
 #### `score`
-compara ou testa scoreboard da entidade;
+compara scoreboard da entidade;
 ... `<alvo>` `<scoreboardAlvo>` `(<|<=|=|>=|>)` `<ponto>` `<scoreboardReferência>`
 ... `<alvo>` `<scoreboardAlvo>` `matches` `<ponto>`
 ```
@@ -124,9 +117,7 @@ execute in minecraft:the_end run tp @a 0 60 0
 ```
 
 ## Positioned
-Instrução para indicar onde vai ser posicionado.
-Não precisa necessariamente indicar entidade.
-Posiões relacionada à: `(as|<posição>)`.
+Instrução para indicar onde vai ser posicionado: `(as|<posição>)`.
 #### `as`
 na entidade;
 ```
@@ -139,26 +130,22 @@ execute as @a at @s positioned ~ 10 ~ run tp @s ~ ~ ~
 ```
 
 ## Rotated
-Instrução para indicar como será a rotação "olhando" em relação a outra entidade.
-Sempre use "^ ^ ^" (relação à visão) para funcionar.
+Instrução a rotação da visão em relação a outra entidad. **Sempre use comando com "^ ^ ^" (relação à visão).**
 ```
 execute rotated as @p run particle minecraft:cloud ^ ^ ^2 0 0 0 0 1
 ```
 
 ## Run
-Instrução para executar o comando.
-Sempre é usado como última instrução.
-Não há como adicionar mais de um `run`.
+Instrução para executar o comando. Usado como última instrução. Só há posibilidade de adicionar um `run`.
 ```
 execute run weather clear
 ```
 
 ## Store
-
-### `(result|success)`
 Instrução para registrar resultado em `(block|bossbar|entiy|score)`.
-- result: registra o resultado;
-- success: registra se funcionou ou não.
+... `(result|success)` `(block|bossbar|entiy|score)`
+- `result`: registra o resultado;
+- `success`: registra se funcionou ou não.
 #### `block`
 registra no nbt do bloco;
 ... `<posição>` `<trajetoNBT>` `(byte|short|int|long|float|double)` `<multiplicador>`
