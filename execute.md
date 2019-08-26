@@ -1,7 +1,7 @@
 # Novo execute da 1.14+
 Esse comandos valem para a versão 1.13 do minecraft, exceto alguns itens.
 
-*ùltima atualização: 26 de agosto - 2019*
+*Última atualização: 26 de agosto - 2019*
 
 ## Tabela de comandos
 * [execute](#execute)
