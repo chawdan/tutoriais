@@ -28,7 +28,7 @@ execute as @a at @s if block ~ ~-1 ~ minecraft:dirt run particle minecraft:happy
 #### 1.12
 `execute @a ~ ~ ~` `...`
 #### 1.13
-`execute` `as @a` `at @s` `if block` `run` `...`
+`execute` `as @a` `at @s` `if block` `run` `...`.
 *A diferença do execute das versões inferiores à 1.13 é que há a possibilidade de adicionar várias condições seguidas*
 
 ## Align
