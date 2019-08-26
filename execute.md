@@ -4,19 +4,19 @@ Esse comandos valem para a versão 1.13 do minecraft, exceto alguns itens.
 *Última atualização: 26 de agosto - 2019*
 
 ## Tabela de comandos
-* [execute](#execute)
-* [align](#align)
-* [anchored](#anchored)
-* [as](#as)
-* [at](#at)
-* [facing](#facing)
-* [if](#if/unless)
-* [in](#in)
-* [positioned](#positioned)
-* [rotated](#rotated)
-* [run](#run)
-* [store](#store)
-* [unless](#if/unless)
+* [Execute](#execute)
+* [Align](#align)
+* [Anchored](#anchored)
+* [As](#as)
+* [At](#at)
+* [Facing](#facing)
+* [If](#if/unless)
+* [In](#in)
+* [Positioned](#positioned)
+* [Rotated](#rotated)
+* [Run](#run)
+* [Store](#store)
+* [Unless](#if/unless)
 
 ---
 
