@@ -1,7 +1,5 @@
 # Novo execute da 1.14+
-Esse comandos valem para a versão 1.13 do minecraft, exceto alguns itens.
-
-*Última atualização: 26 de agosto - 2019*
+Esse comandos valem para a versão a partir da 1.13 do minecraft, exceto [data](#if###data).
 
 ## Tabela de comandos
 * [Execute](#execute)
@@ -61,7 +59,7 @@ execute at @a run setblock ~ ~ ~ minecraft:stone
 Instrução para ser executar como a visão rotacionada para `entity`(entidade) ou `~ ~ ~`(bloco),
 #### `entity`
 olhando para entidade (olho ou pés);
-... (`eyes`/`feet`)
+... `(eyes/feet)`
 ```
 execute facing entity @p feet run particle minecraft:happy_villager ^ ^ ^2 0 0 0 0 1
 ```
