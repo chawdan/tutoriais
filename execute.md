@@ -20,7 +20,6 @@
       - [`data`](#data)
       - [`entity`](#entity-1)
       - [`score`](#score)
-      - [`storage`](#storage)
   - [In](#in)
   - [Positioned](#positioned)
       - [`as`](#as-1)
@@ -32,6 +31,7 @@
       - [`bossbar`](#bossbar)
       - [`entity`](#entity-2)
       - [`score`](#score-1)
+      - [`storage`](#storage)
 
 ---
 
@@ -126,9 +126,10 @@ O `align` pode ser usado como: `(x|xy|zx|...|xzy|)`
 ```
 
 #### `data`
-  - indintifica "nbt" (dados) da entidade ou bloco;
+  - indintifica "nbt" (dados) da entidade, bloco ou dados armazenados;
     - ...`bloco` `<posição>` `<trajetoNBT>`
     - ...`entidade` `<alvo>` `<trajeto>`
+    - ...`storage` `<nomeStorage>` `<trajetoNBT>`
 
 ```
 /execute as @a if data entity @s SelectedItem.tag.Enchantments run playsound minecraft:block.enchantment_table.use master @a
@@ -151,10 +152,6 @@ O `align` pode ser usado como: `(x|xy|zx|...|xzy|)`
 /execute if score %fantasma tempo matches 60.. run scoreboard players set %fantasma tempo 0
 ```
 
-#### `storage`
-  - indintifica dados armagenados;
-    - ...`nomeStorage` `<trajetoNBT>`
-
 ## In
   - Instrução do mundo que vais ser executado.
 
@@ -165,6 +162,8 @@ O `align` pode ser usado como: `(x|xy|zx|...|xzy|)`
 ## Positioned
   - Instrução para indicar onde vai ser posicionado:
     - `(as|<posição>)`. 
+
+
 #### `as`
   - na entidade;
 
@@ -231,4 +230,12 @@ O `align` pode ser usado como: `(x|xy|zx|...|xzy|)`
 
 ```
 /execute as @a store result score @s dinheiro run clear @s minecraft:diamond 0
+```
+
+#### `storage`
+  - registra dados em armagenamento;
+    - ...`<nomeStorage>` `<trajetoNBT>`
+
+```
+/execute as @a store storage custom:jogadores.online if entity @a
 ```
