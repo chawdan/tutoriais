@@ -20,6 +20,7 @@
       - [`data`](#data)
       - [`entity`](#entity-1)
       - [`score`](#score)
+      - [`predicate`](#predicate)
   - [In](#in)
   - [Positioned](#positioned)
       - [`as`](#as-1)
@@ -150,6 +151,13 @@ O `align` pode ser usado como: `(x|xy|zx|...|xzy|)`
 
 ```
 /execute if score %fantasma tempo matches 60.. run scoreboard players set %fantasma tempo 0
+```
+
+#### `predicate`
+  - compara um predicato em um arquivo .json no datapack
+
+```
+/execute if predicate predicate custom:shift run summon fireball
 ```
 
 ## In
