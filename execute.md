@@ -3,7 +3,7 @@
 
 - Novos recursos:
   - 1.14: [data](#data)
-  - 1.15: [`storage`](#storage)
+  - 1.15: [`storage`](#storage) [`predicate`](#predicate)
 
 - [Novo execute da 1.13](#novo-execute-da-113)
 - [Execute](#execute)
