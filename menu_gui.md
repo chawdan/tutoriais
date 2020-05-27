@@ -1,5 +1,3 @@
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `coloro`
-
 # Menu gui
 > Essa é uma técnica que eu uso de organização por padrão, mas você pode aproveitar dos meus métodos.
 
