@@ -1,3 +1,8 @@
+<style>
+  not {
+    color: red;
+  }
+</style>
 # Menu gui
 > Essa é uma técnica que eu uso de organização por padrão, mas você pode aproveitar dos meus métodos.
 
@@ -38,7 +43,7 @@ Eu divido em x partes:
      - Para cada categoria de página
   2. **Nome do datapack**
      - Pensar em uma **sigla**
-     - Nome longo dificulta
+     - <not>Nome longo dificulta
 
 ## Mecânica
   1. **Chamada**
@@ -46,6 +51,18 @@ Eu divido em x partes:
         - Re/Definir os itens
         - Scores (páginas)
         - Tags
-     1. Remover
+     2. Remover
         - Deletar bloco 
         - Matar entidade 
+  2. **Detectar os cliques**
+  3. **Excluir item ao clicar**
+  4. **Cliques**
+     - Executar comandos 
+       - Recolocar item clicado
+       - <not>Se não spama
+  5. **Mudar de página**
+     - Definir scoreboar da página
+     - Recolocar itens
+     - <not>Se não buga com outra página
+  6. **Dropar itens errados**
+     - Se colocar um item que não é do menu gui, ele dropa
