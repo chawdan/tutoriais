@@ -4,7 +4,6 @@
 Eu divido em x partes:
 - [Menu gui](#menu-gui)
   - [Planejamento](#planejamento)
-  - [Display](#display)
   - [Preparação](#preparação)
   - [Mecânica](#mecânica)
 
@@ -14,19 +13,17 @@ Eu divido em x partes:
   2. **Páginas**
      - Pense na navegação
      - Quantas páginas?
-
-## Display
-> Isso faz parte do **planejamento** também
-  1. **Itens**
-     - Procure itens que representará cada função
-  2. **Plataforma**
+  3. **Display**
+     - Procure itens que represente cada função
+     - ex: *sol = girasol*
+  4. **Plataforma**
      - Onde vai ficar displonível?
        - [ ] Báu
        - [x] Barril *(recomendo usar esse para inicir)*
        - [ ] Minecart Chest
        - [ ] Dispenser
        - [ ] Funil
-  3. **Chamar o Gui**
+  5. **Chamar o Gui**
      - Como invocar o gui?
        - [ ] Dropando item
        - [ ] Clicando com um item
@@ -34,11 +31,10 @@ Eu divido em x partes:
        - [x] Com ovo *(recomendo usar esse para iniciar)*
 
 ## Preparação
-  1. **Criar scoreboards**
+  1. **Criar datapack**
+     - Pensar em uma **"sigla"** *(Nome longo dificulta)*
+  2. **Criar scoreboards**
      - Para cada categoria de página
-  2. **Nome do datapack**
-     - Pensar em uma **sigla**
-     - *Nome longo dificulta*
 
 ## Mecânica
   1. **Invocar/remover**
