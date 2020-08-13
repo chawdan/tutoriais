@@ -1,0 +1,2 @@
+[![Discord](https://img.shields.io/discord/478617430764290069?logo=discord&style=flat-square)](https://discord.gg/CEzXuY7)
+[![Discord](https://img.shields.io/discord/478617430764290069?logo=discord&style=for-the-badge)](https://discord.gg/CEzXuY7)
