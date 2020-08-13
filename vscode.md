@@ -5,8 +5,8 @@
 # Extensões
 Essas são algumas das exteções que eu uso:
   - Linguagem dos datapacks: [Datapack Helper Plus (MCF)](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server)
-  - Esse é para o syntax: [Language-mcfunction](https://marketplace.visualstudio.com/items?itemName=arcensoth.language-mcfunction)
   - Linguagem de Json do datapack: [Datapack Helper Plus (JSON)](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-json)
+  - Esse é para o syntax: [Language-mcfunction](https://marketplace.visualstudio.com/items?itemName=arcensoth.language-mcfunction)
   - Para compartilhar com alguém/equipe: [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
 
 
